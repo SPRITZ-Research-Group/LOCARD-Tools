@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "1",
+        "name": "eleonora",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence",
+            "protocolProfileBehavior": {
+                "disabledSystemHeaders": {
+                    "accept-encoding": true,
+                    "content-type": true
+                }
+            },
+            "request": {
+                "auth": {
+                    "basic": [
+                        {
+                            "key": "password",
+                            "type": "string",
+                            "value": "passwd"
+                        },
+                        {
+                            "key": "username",
+                            "type": "string",
+                            "value": "elosiouk"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n    \"caseId\":\"1\"\r\n    \"hash\":\"ABCDEFG\"\r\n}"
+                },
+                "header": [],
+                "method": "POST",
+                "url": {
+                    "host": [
+                        "bpm6",
+                        "locard",
+                        "motivian",
+                        "com"
+                    ],
+                    "path": [
+                        "locard",
+                        "rest",
+                        "externalAgent",
+                        "submitEvidence"
+                    ],
+                    "protocol": "https",
+                    "raw": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence"
+                }
+            },
+            "response": "- Site 6 - http://7sim.net/ is where 447562459427 was found.\n"
+        }
+    ]
+}
