@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "12",
+        "name": "name",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence",
+            "protocolProfileBehavior": {
+                "disabledSystemHeaders": {
+                    "accept-encoding": true,
+                    "content-type": true
+                }
+            },
+            "request": {
+                "auth": {
+                    "basic": [
+                        {
+                            "key": "password",
+                            "type": "string",
+                            "value": "pwd"
+                        },
+                        {
+                            "key": "username",
+                            "type": "string",
+                            "value": "uname"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n    \"caseId\":\"12\"\r\n    \"hash\":\"ABCDEFG\"\r\n}"
+                },
+                "header": [],
+                "method": "POST",
+                "url": {
+                    "host": [
+                        "bpm6",
+                        "locard",
+                        "motivian",
+                        "com"
+                    ],
+                    "path": [
+                        "locard",
+                        "rest",
+                        "externalAgent",
+                        "submitEvidence"
+                    ],
+                    "protocol": "https",
+                    "raw": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence"
+                }
+            },
+            "response": "Values are in the terminal."
+        }
+    ]
+}
