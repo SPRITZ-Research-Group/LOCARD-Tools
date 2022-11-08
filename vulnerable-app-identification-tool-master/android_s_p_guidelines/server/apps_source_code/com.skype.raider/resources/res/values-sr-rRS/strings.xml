@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_audio_action">Audio poziv (besplatan)</string>
+    <string name="contacts_message_action">Trenutna poruka (besplatna)</string>
+    <string name="contacts_phone_action">Skype to Phone %s</string>
+    <string name="contacts_video_action">Video poziv (besplatan)</string>
+    <string name="notification_default_channel_name">Opšti kanal obaveštenja</string>
+    <string name="text_format_message">%1$s: %2$s</string>
+    <string name="ticker_format_message">%1$s, %2$s, %3$s</string>
+</resources>

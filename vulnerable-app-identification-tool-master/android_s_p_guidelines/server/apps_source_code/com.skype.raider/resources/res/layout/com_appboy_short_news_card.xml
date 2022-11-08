@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/com_appboy_feed_read_indicator_holder"/>
+    <LinearLayout android:id="@+id/com_appboy_short_news_card_image" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ViewStub android:id="@+id/com_appboy_short_news_card_imageview_stub" android:layout="@layout/com_appboy_stubbed_feed_image_view" style="@style/Appboy_Cards_ShortNews_Image"/>
+        <ViewStub android:id="@+id/com_appboy_short_news_card_drawee_stub" android:layout="@layout/com_appboy_stubbed_feed_drawee_view" style="@style/Appboy_Cards_ShortNews_Image"/>
+    </LinearLayout>
+    <View android:layout_width="0dp" android:layout_height="10dp" android:layout_below="@+id/com_appboy_short_news_card_image"/>
+    <TextView android:id="@+id/com_appboy_short_news_card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/com_appboy_short_news_card_image" android:layout_alignParentTop="true" style="@style/Appboy_Cards_ShortNews_Title"/>
+    <TextView android:id="@+id/com_appboy_short_news_card_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_below="@+id/com_appboy_short_news_card_title" android:layout_alignLeft="@+id/com_appboy_short_news_card_title" style="@style/Appboy_Cards_ShortNews_Description"/>
+    <TextView android:id="@+id/com_appboy_short_news_card_domain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_below="@+id/com_appboy_short_news_card_description" android:layout_alignLeft="@+id/com_appboy_short_news_card_description" style="@style/Appboy_Cards_ShortNews_Domain"/>
+</merge>

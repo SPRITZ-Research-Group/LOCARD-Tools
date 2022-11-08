@@ -1,0 +1,407 @@
+[!] Analysing 
+
+[#] RULE 1
+[=>] Show an App Chooser
+[=>] 116/116 file(s) analysed
+
+[-] 1 file(s) have CRITICAL issue(s)
+[*] 115 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/jp/naver/line/android/activity/selectchat/i.java
+* 'Intent.createChooser' is not called for an implicit intent which use ACTION_SEND/ACTION_GET_CONTENT
+- at line 349: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 358: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 366: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 375: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 383: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 392: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 401: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 413: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 422: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 433: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- at line 442: 'intent.setAction("android.intent.action.SEND");' 
+
+
+- line not found: 'intent.setAction("android.intent.action.SEND");' 
+
+
+
+[#] RULE 2
+[=>] Control Access to Content Providers
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 3
+[=>] Provide the right permissions
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 4
+[=>] Use intents to defer permissions
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 5
+[=>] Use SSL traffic
+[=>] 7/7 file(s) analysed
+
+[-] 6 file(s) have CRITICAL issue(s)
+[*] 1 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/GraphRequest.java
+* HTTPS connection is not used
+- at line 694: 'uRLConnection = (HttpURLConnection) url.openConnection();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/internal/ae.java
+* HTTPS connection is not used
+- at line 165: 'uRLConnection = (HttpURLConnection) new URL(aiVar.a.toString()).openConnection();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/applovin/impl/sdk/ad.java
+* HTTPS connection is not used
+- at line 42: 'HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(str).openConnection();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/gms/auth/api/signin/internal/zzd.java
+* HTTPS connection is not used
+- at line 32: 'HttpURLConnection httpURLConnection = (HttpURLConnection) new URL(valueOf2.length() != 0 ? valueOf3.concat(valueOf2) : new String(valueOf3)).openConnection();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/gms/ads/identifier/zza.java
+* HTTPS connection is not used
+- at line 34: 'httpURLConnection = (HttpURLConnection) new URL(uri).openConnection();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/exoplayer/util/Util.java
+* HTTPS connection is not used
+- at line 513: 'httpURLConnection = (HttpURLConnection) new URL(str).openConnection();' 
+
+
+
+[#] RULE 6
+[=>] Use HTML message channels
+[=>] 15/15 file(s) analysed
+
+[-] 4 file(s) have CRITICAL issue(s)
+[*] 11 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/internal/bo.java
+* evaluateJavascript(), addJavascriptInterface() or setJavaScriptEnabled() are used but deprecated
+- at line 331: 'this.e.getSettings().setJavaScriptEnabled(true);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/applovin/impl/adview/cn.java
+* evaluateJavascript(), addJavascriptInterface() or setJavaScriptEnabled() are used but deprecated
+- at line 14: 'settings.setJavaScriptEnabled(true);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/applovin/impl/adview/n.java
+* evaluateJavascript(), addJavascriptInterface() or setJavaScriptEnabled() are used but deprecated
+- at line 42: 'settings.setJavaScriptEnabled(true);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/gms/ads/tagsdk/internal/zzj.java
+* evaluateJavascript(), addJavascriptInterface() or setJavaScriptEnabled() are used but deprecated
+- at line 40: 'webView.addJavascriptInterface(new JSInterface(zze), "_gmptnl");' 
+
+
+
+[#] RULE 7
+[=>] Load only whitelisted content in WebView objects
+[=>] 15/15 file(s) analysed
+
+[-] 1 file(s) have CRITICAL issue(s)
+[*] 14 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/gms/ads/tagsdk/internal/zzg.java
+* 'setWebViewClient' method is not called
+- at line 52: 'WebView webView = (WebView) this.zzbz.get();' 
+
+
+
+[#] RULE 8
+[=>] Store private data within internal storage
+[=>] 324/324 file(s) analysed
+
+[*] 324 file(s) have NOTHING to report
+
+[#] RULE 9
+[=>] Share data securely across apps
+[=>] 116/116 file(s) analysed
+
+[*] 116 file(s) have NOTHING to report
+
+[#] RULE 10
+[=>] Use scoped directory access
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 11
+[=>] Store only non-sensitive data in cache files
+[=>] 324/324 file(s) analysed
+
+[*] 321 file(s) have NOTHING to report
+[!] 3 file(s) have WARNING(S)
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/core/content/FileProvider.java
+* Don't store sensitive data in cache files
+- at line 142: 'file = context.getCacheDir();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/jp/naver/line/android/common/util/io/i.java
+* Don't store sensitive data in cache files
+- at line 178: 'File externalCacheDir = context.getExternalCacheDir();' 
+
+
+- at line 180: 'return context.getCacheDir();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/applovin/impl/sdk/av.java
+* Don't store sensitive data in cache files
+- at line 175: 'return a(context) ? new File(context.getExternalFilesDir(null), "al") : new File(context.getCacheDir(), "al");' 
+
+
+
+[#] RULE 12
+[=>] Use SharedPreferences in private mode
+[=>] 324/324 file(s) analysed
+
+[-] 6 file(s) have CRITICAL issue(s)
+[*] 318 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/preference/f.java
+* Don't use SharedPreferences objects to share data
+- at line 55: 'this.b = context.getSharedPreferences(this.f, this.g);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/multidex/i.java
+* Don't use SharedPreferences objects to share data
+- at line 327: 'return context.getSharedPreferences("multidex.version", VERSION.SDK_INT < 11 ? 0 : 4);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/ad/tracking/cpe/agent/ADTrackingAgent.java
+* Don't use SharedPreferences objects to share data
+- at line 301: 'Editor edit = context.getSharedPreferences(ADTConstants.SHARED_PREF_KEY, 4).edit();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/ad/tracking/cpe/agent/MyNetChange.java
+* Don't use SharedPreferences objects to share data
+- at line 18: 'SharedPreferences sharedPreferences = context.getSharedPreferences(ADTConstants.SHARED_PREF_KEY, 4);' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/ad/tracking/cpe/agent/ADTrackingReceiver.java
+* Don't use SharedPreferences objects to share data
+- at line 18: 'Editor edit = context.getSharedPreferences(ADTConstants.SHARED_PREF_KEY, 4).edit();' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/ad/tracking/cpe/agent/ReferrerCatcher.java
+* Don't use SharedPreferences objects to share data
+- at line 38: 'SharedPreferences sharedPreferences = context.getSharedPreferences(ADTConstants.SHARED_PREF_KEY, 4);' 
+
+
+
+[#] RULE 13
+[=>] Keep services and dependencies up-to-date
+[=>] 2789/2789 file(s) analysed
+
+[-] 1 file(s) have CRITICAL issue(s)
+[EXTERNAL] >>> nothing
+* There is no check to know if Google Play services is up-to-date
+- no line to display: '' 
+
+
+
+[#] RULE 14
+[=>] Check validity of data
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 15
+[=>] Don't use dangerous custom permissions
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 16
+[=>] Delete files stored locally with a WebView
+[=>] 15/15 file(s) analysed
+
+[*] 14 file(s) have NOTHING to report
+[!] 1 file(s) have WARNING(S)
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/google/android/gms/ads/tagsdk/internal/zzg.java
+* Each webview has to delete files stored locally with 'clearCache'
+- at line 52: 'WebView webView = (WebView) this.zzbz.get();' 
+
+
+
+[#] RULE 17
+[=>] Avoid SQL injection
+[=>] 9/9 file(s) analysed
+
+[-] 8 file(s) have CRITICAL issue(s)
+[*] 1 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/core/content/FileProvider.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 44: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/work/impl/WorkManagerInitializer.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 22: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/lifecycle/ProcessLifecycleOwnerInitializer.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 21: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/jp/naver/line/android/cp/ServerHostProvider.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 57: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/ad/tracking/cpe/agent/ADTrackingRecordDB.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 54: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/FacebookContentProvider.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 34: 'public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/marketing/internal/MarketingInitProvider.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 28: 'public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/internal/FacebookInitProvider.java
+* Content provider doesn't use only whitelisted methods (query, update and delete)
+- at line 25: 'public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)' 
+
+
+
+[#] RULE 18
+[=>] Prefer explicit intents
+[=>] 116/116 file(s) analysed
+
+[-] 1 file(s) have CRITICAL issue(s)
+[*] 115 file(s) have NOTHING to report
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/core/app/ak.java
+* Implicit intent might execute an android component untrusted
+- at line 182: 'alVar.b = this.a.bindService(new Intent("android.support.BIND_NOTIFICATION_SIDE_CHANNEL").setComponent(alVar.a), this, 33);' 
+
+
+
+[#] RULE 19
+[=>] Use Android IPC
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 20
+[=>] Use services
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 21
+[=>] Use telephony networking
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 22
+[=>] Use cryptography
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 23
+[=>] Use broadcast receivers
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 24
+[=>] Dynamically load code
+[=>] 1/1 file(s) analysed
+
+[*] 1 file(s) have NOTHING to report
+
+[#] RULE 25
+[=>] Hostname verification
+[=>] 7/7 file(s) analysed
+
+[*] 7 file(s) have NOTHING to report
+
+[#] RULE 26
+[=>] SSLSocket
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 27
+[=>] Configure CAs for debugging
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 28
+[=>] Opt out of cleartext traffic
+[=>] 0/0 file(s) analysed
+
+
+[#] RULE 29
+[=>] Choose a recommended algorithm
+[=>] 5/5 file(s) analysed
+
+[*] 3 file(s) have NOTHING to report
+[!] 2 file(s) have WARNING(S)
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/defpackage/jwu.java
+* It's better to use a recommended cryptographic algorithm
+- at line 392: 'Cipher instance = Cipher.getInstance("AES/ECB/PKCS7Padding");' 
+
+
+- at line 395: 'instance = Cipher.getInstance("AES");' 
+
+
+- at line 419: 'Cipher instance = Cipher.getInstance("AES");' 
+
+
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/com/facebook/soloader/SoLoader.java
+* It's better to use a recommended cryptographic algorithm
+- at line 292: 'MessageDigest instance = MessageDigest.getInstance("MD5");' 
+
+
+
+[#] RULE 30
+[=>] Deprecated cryptographic functionality
+[=>] 1/1 file(s) analysed
+
+[*] 1 file(s) have NOTHING to report
+
+[#] RULE 31
+[=>] Migrate existing data
+[=>] 324/324 file(s) analysed
+
+[*] 324 file(s) have NOTHING to report
+
+[#] RULE 32
+[=>] Access device encrypted storage
+[=>] 324/324 file(s) analysed
+
+[*] 323 file(s) have NOTHING to report
+[!] 1 file(s) have WARNING(S)
+[EXTERNAL] >>> apps_source_code/jp.naver.line.android/sources/androidx/core/content/a.java
+* Don't use device encrypted storage as a general-purpose encrypted store
+- at line 111: 'return VERSION.SDK_INT >= 24 ? context.createDeviceProtectedStorageContext() : null;' 
+
+

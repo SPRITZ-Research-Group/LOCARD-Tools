@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContactsSource xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ContactsDataKind android:icon="@mipmap/ic_launcher" android:mimeType="vnd.android.cursor.item/com.skype4life.audio" android:summaryColumn="data3" android:detailColumn="data4"/>
+    <ContactsDataKind android:icon="@mipmap/ic_launcher" android:mimeType="vnd.android.cursor.item/com.skype4life.video" android:summaryColumn="data3" android:detailColumn="data4"/>
+    <ContactsDataKind android:icon="@mipmap/ic_launcher" android:mimeType="vnd.android.cursor.item/com.skype4life.message" android:summaryColumn="data3" android:detailColumn="data4"/>
+    <ContactsDataKind android:icon="@mipmap/ic_launcher" android:mimeType="vnd.android.cursor.item/com.skype4life.phone" android:summaryColumn="data3" android:detailColumn="data4"/>
+</ContactsSource>

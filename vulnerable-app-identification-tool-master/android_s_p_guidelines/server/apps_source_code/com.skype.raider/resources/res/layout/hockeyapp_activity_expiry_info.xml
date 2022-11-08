@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@a/hockeyapp_background_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@a/hockeyapp_text_black" android:gravity="center" android:id="@b/label_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

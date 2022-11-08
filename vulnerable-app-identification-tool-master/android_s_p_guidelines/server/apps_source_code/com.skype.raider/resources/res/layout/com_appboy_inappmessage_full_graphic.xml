@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appboy.ui.inappmessage.views.AppboyInAppMessageFullView xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/com_appboy_inappmessage_full_frame" style="@style/Appboy_InAppMessage_Frame_Full_Graphic"/>
+    <RelativeLayout android:id="@+id/com_appboy_inappmessage_full" style="@style/Appboy_InAppMessage_Full_Graphic">
+        <ViewStub android:id="@+id/com_appboy_inappmessage_full_imageview_stub" android:layout="@layout/com_appboy_stubbed_inappmessage_image_view" style="@style/Appboy_InAppMessage_Image_Full_Graphic"/>
+        <ViewStub android:id="@+id/com_appboy_inappmessage_full_drawee_stub" android:layout="@layout/com_appboy_stubbed_inappmessage_drawee_view" style="@style/Appboy_InAppMessage_Image_Full_Graphic"/>
+        <RelativeLayout android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/com_appboy_inappmessage_full_button_layout" style="@style/Appboy_InAppMessage_Layout_Button_Full_Graphic">
+                <Button android:id="@+id/com_appboy_inappmessage_full_button_one" style="@style/Appboy_InAppMessage_Button_Full_One_Graphic"/>
+                <Button android:id="@+id/com_appboy_inappmessage_full_button_two" style="@style/Appboy_InAppMessage_Button_Full_Two_Graphic"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageButton android:id="@+id/com_appboy_inappmessage_full_close_button" style="@style/Appboy_InAppMessage_CloseButton_Full_Graphic"/>
+    </RelativeLayout>
+</com.appboy.ui.inappmessage.views.AppboyInAppMessageFullView>

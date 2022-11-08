@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "763097bc-c945-4f0d-819d-6ea6aa10969a",
+        "name": "unipd",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence",
+            "protocolProfileBehavior": {
+                "disabledSystemHeaders": {
+                    "accept-encoding": true,
+                    "content-type": true
+                }
+            },
+            "request": {
+                "auth": {
+                    "basic": [
+                        {
+                            "key": "password",
+                            "type": "string",
+                            "value": "uni_mal"
+                        },
+                        {
+                            "key": "username",
+                            "type": "string",
+                            "value": "uni_mal"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\r\n    \"caseId\":\"16003\"\r\n    \"hash\":\"ABCDEFG\"\r\n}"
+                },
+                "header": [],
+                "method": "POST",
+                "url": {
+                    "host": [
+                        "bpm6",
+                        "locard",
+                        "motivian",
+                        "com"
+                    ],
+                    "path": [
+                        "locard",
+                        "rest",
+                        "externalAgent",
+                        "submitEvidence"
+                    ],
+                    "protocol": "https",
+                    "raw": "https://bpm6.locard.motivian.com/locard/rest/externalAgent/submitEvidence"
+                }
+            },
+            "response": "Check the output.txt file for any vulnerabilities"
+        }
+    ]
+}

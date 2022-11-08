@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/com_appboy_story_full_layout" style="@style/Appboy_Story_FullLayout">
+        <RelativeLayout android:id="@+id/com_appboy_story_relative_layout" style="@style/Appboy_Story_OneImageLayout">
+            <ImageView android:id="@+id/com_appboy_story_image_view" style="@style/Appboy_Story_ImageView_OneImage"/>
+            <ImageButton android:id="@+id/com_appboy_story_button_previous" style="@style/Appboy_Story_ImageButton_OneImage_Left"/>
+            <ImageButton android:id="@+id/com_appboy_story_button_next" style="@style/Appboy_Story_ImageButton_OneImage_Right"/>
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/com_appboy_story_text_view_container" style="@style/Appboy_Story_TextViewContainer_Title_OneImage">
+            <TextView android:id="@+id/com_appboy_story_text_view" style="@style/Appboy_Story_TextView_Title_OneImage"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/com_appboy_story_text_view_small_container" style="@style/Appboy_Story_TextViewContainer_Subtitle_OneImage">
+            <TextView android:id="@+id/com_appboy_story_text_view_small" style="@style/Appboy_Story_TextView_Subtitle_OneImage"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

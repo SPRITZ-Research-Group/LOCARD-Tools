@@ -1,0 +1,70 @@
+package com.microsoft.environment;
+
+public final class b {
+
+    public static final class a {
+        public static final int abc_action_bar_home_description = 2131230720;
+        public static final int abc_action_bar_home_description_format = 2131230721;
+        public static final int abc_action_bar_home_subtitle_description_format = 2131230722;
+        public static final int abc_action_bar_up_description = 2131230723;
+        public static final int abc_action_menu_overflow_description = 2131230724;
+        public static final int abc_action_mode_done = 2131230725;
+        public static final int abc_activity_chooser_view_see_all = 2131230726;
+        public static final int abc_activitychooserview_choose_application = 2131230727;
+        public static final int abc_search_hint = 2131230730;
+        public static final int abc_searchview_description_clear = 2131230731;
+        public static final int abc_searchview_description_query = 2131230732;
+        public static final int abc_searchview_description_search = 2131230733;
+        public static final int abc_searchview_description_submit = 2131230734;
+        public static final int abc_searchview_description_voice = 2131230735;
+        public static final int abc_shareactionprovider_share_with = 2131230736;
+        public static final int abc_shareactionprovider_share_with_application = 2131230737;
+        public static final int abc_toolbar_collapse_description = 2131230738;
+        public static final int app_name = 2131230877;
+        public static final int catalyst_copy_button = 2131230879;
+        public static final int catalyst_debugjs = 2131230880;
+        public static final int catalyst_debugjs_off = 2131230881;
+        public static final int catalyst_dismiss_button = 2131230882;
+        public static final int catalyst_element_inspector = 2131230883;
+        public static final int catalyst_heap_capture = 2131230884;
+        public static final int catalyst_hot_module_replacement = 2131230885;
+        public static final int catalyst_hot_module_replacement_off = 2131230886;
+        public static final int catalyst_jsload_error = 2131230887;
+        public static final int catalyst_live_reload = 2131230888;
+        public static final int catalyst_live_reload_off = 2131230889;
+        public static final int catalyst_loading_from_url = 2131230890;
+        public static final int catalyst_perf_monitor = 2131230891;
+        public static final int catalyst_perf_monitor_off = 2131230892;
+        public static final int catalyst_poke_sampling_profiler = 2131230893;
+        public static final int catalyst_reload_button = 2131230894;
+        public static final int catalyst_reloadjs = 2131230895;
+        public static final int catalyst_remotedbg_error = 2131230896;
+        public static final int catalyst_remotedbg_message = 2131230897;
+        public static final int catalyst_report_button = 2131230898;
+        public static final int catalyst_settings = 2131230899;
+        public static final int catalyst_settings_title = 2131230900;
+        public static final int common_google_play_services_enable_button = 2131230739;
+        public static final int common_google_play_services_enable_text = 2131230740;
+        public static final int common_google_play_services_enable_title = 2131230741;
+        public static final int common_google_play_services_install_button = 2131230742;
+        public static final int common_google_play_services_install_text = 2131230743;
+        public static final int common_google_play_services_install_title = 2131230744;
+        public static final int common_google_play_services_notification_channel_name = 2131230745;
+        public static final int common_google_play_services_notification_ticker = 2131230746;
+        public static final int common_google_play_services_unknown_issue = 2131230747;
+        public static final int common_google_play_services_unsupported_text = 2131230748;
+        public static final int common_google_play_services_update_button = 2131230749;
+        public static final int common_google_play_services_update_text = 2131230750;
+        public static final int common_google_play_services_update_title = 2131230751;
+        public static final int common_google_play_services_updating_text = 2131230752;
+        public static final int common_google_play_services_wear_update_text = 2131230753;
+        public static final int common_open_on_phone = 2131230754;
+        public static final int common_signin_button_text = 2131230755;
+        public static final int common_signin_button_text_long = 2131230756;
+        public static final int preinstall_properties_file_path = 2131230920;
+        public static final int preinstall_stub_path1 = 2131230921;
+        public static final int preinstall_stub_path2 = 2131230922;
+        public static final int preinstall_sys_app_dir_path = 2131230923;
+        public static final int status_bar_notification_info_overflow = 2131230759;
+    }
+}

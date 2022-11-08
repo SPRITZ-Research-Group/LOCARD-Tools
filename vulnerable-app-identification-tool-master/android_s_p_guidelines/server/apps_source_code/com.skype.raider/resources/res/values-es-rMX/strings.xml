@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="contacts_audio_action">Llamada de voz (gratis)</string>
+    <string name="contacts_message_action">Mensaje instantáneo (gratis)</string>
+    <string name="contacts_phone_action">Skype a teléfono %s</string>
+    <string name="contacts_video_action">Videollamada (gratis)</string>
+    <string name="notification_default_channel_name">Canal de notificaciones generales</string>
+    <string name="text_format_message">%1$s: %2$s</string>
+    <string name="ticker_format_message">%1$s, %2$s, %3$s</string>
+</resources>

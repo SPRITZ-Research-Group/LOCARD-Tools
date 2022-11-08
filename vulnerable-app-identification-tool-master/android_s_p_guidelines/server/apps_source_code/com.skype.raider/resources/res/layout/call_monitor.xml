@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/call_monitor_view" android:background="@drawable/call_monitor_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.skype.callmonitor.symbolview.SymbolView android:textSize="24dp" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/user_icon" android:background="@drawable/avatar_circle" android:clickable="true" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="30dp" app:symbol_code="e200"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/avatar_image" android:background="@android:color/transparent" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="30dp"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.skype.slimcore.video.RNCallingVideoView android:id="@+id/video_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <include layout="@layout/call_controls"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@a/gallery_item" android:background="#14ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@a/sdvThumbnail" android:layout_width="match_parent" android:layout_height="wrap_content" app:fadeDuration="150" app:viewAspectRatio="1" app:actualImageScaleType="7"/>
+    <FrameLayout android:id="@a/selected_container" android:background="@drawable/background" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@a/selected_checkmark" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="6dp" android:src="@drawable/checkmark"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_vertical" android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@a/video_length" android:background="@drawable/video_length_background" android:paddingLeft="6dp" android:paddingRight="6dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="6dp" android:layout_marginBottom="6dp"/>
+</FrameLayout>

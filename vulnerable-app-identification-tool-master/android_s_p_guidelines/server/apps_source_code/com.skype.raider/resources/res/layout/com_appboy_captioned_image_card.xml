@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@+id/com_appboy_captioned_image_card_imageview_stub" android:layout="@layout/com_appboy_stubbed_feed_image_view" android:inflatedId="@+id/com_appboy_captioned_image_card_image" style="@style/Appboy_Cards_CaptionedImage_Image"/>
+    <ViewStub android:id="@+id/com_appboy_captioned_image_card_drawee_stub" android:layout="@layout/com_appboy_stubbed_feed_drawee_view" android:inflatedId="@+id/com_appboy_captioned_image_card_image" style="@style/Appboy_Cards_CaptionedImage_Image"/>
+    <RelativeLayout android:id="@+id/com_appboy_captioned_image_card_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/com_appboy_captioned_image_card_image" style="@style/Appboy_Cards_CaptionedImage_Title_Container">
+        <include layout="@layout/com_appboy_feed_read_indicator_holder"/>
+        <TextView android:id="@+id/com_appboy_captioned_image_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="11dp" android:layout_marginRight="10dp" android:layout_marginBottom="11dp" style="@style/Appboy_Cards_CaptionedImage_Title"/>
+    </RelativeLayout>
+    <TextView android:id="@+id/com_appboy_captioned_image_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_below="@+id/com_appboy_captioned_image_card_title_container" style="@style/Appboy_Cards_CaptionedImage_Description"/>
+    <TextView android:id="@+id/com_appboy_captioned_image_card_domain" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/com_appboy_captioned_image_description" style="@style/Appboy_Cards_CaptionedImage_Domain"/>
+</merge>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appboy.ui.inappmessage.views.AppboyInAppMessageFullView xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/com_appboy_inappmessage_full_frame" style="@style/Appboy_InAppMessage_Frame_Full"/>
+    <RelativeLayout android:id="@+id/com_appboy_inappmessage_full" style="@style/Appboy_InAppMessage_Full">
+        <LinearLayout android:orientation="vertical" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+            <ViewStub android:id="@+id/com_appboy_inappmessage_full_imageview_stub" android:layout="@layout/com_appboy_stubbed_inappmessage_image_view" style="@style/Appboy_InAppMessage_Image_Full"/>
+            <ViewStub android:id="@+id/com_appboy_inappmessage_full_drawee_stub" android:layout="@layout/com_appboy_stubbed_inappmessage_drawee_view" style="@style/Appboy_InAppMessage_Image_Full"/>
+            <RelativeLayout android:id="@+id/com_appboy_inappmessage_full_textarea" style="@style/Appboy_InAppMessage_Full_TextArea">
+                <ScrollView android:id="@+id/com_appboy_inappmessage_full_scrollview" style="@style/Appboy_InAppMessage_ScrollView_Full">
+                    <LinearLayout android:id="@+id/com_appboy_inappmessage_full_text_layout" style="@style/Appboy_InAppMessage_Layout_Text_Full">
+                        <TextView android:id="@+id/com_appboy_inappmessage_full_header_text" style="@style/Appboy_InAppMessage_Header_Full"/>
+                        <TextView android:id="@+id/com_appboy_inappmessage_full_message" style="@style/Appboy_InAppMessage_Message_Full"/>
+                    </LinearLayout>
+                </ScrollView>
+                <LinearLayout android:id="@+id/com_appboy_inappmessage_full_button_layout" style="@style/Appboy_InAppMessage_Layout_Button_Full">
+                    <Button android:id="@+id/com_appboy_inappmessage_full_button_one" style="@style/Appboy_InAppMessage_Button_Full_One"/>
+                    <Button android:id="@+id/com_appboy_inappmessage_full_button_two" style="@style/Appboy_InAppMessage_Button_Full_Two"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageButton android:id="@+id/com_appboy_inappmessage_full_close_button" style="@style/Appboy_InAppMessage_CloseButton_Full"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.appboy.ui.inappmessage.views.AppboyInAppMessageFullView>
